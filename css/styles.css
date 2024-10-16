@@ -126,6 +126,18 @@ img {
   background-color: #2e2f42;
   padding-top: 188px;
   padding-bottom: 188px;
+
+  width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url("../images/bg.jpg");
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-size: cover;
 }
 .page-title {
   margin: auto;
@@ -195,6 +207,7 @@ img {
   text-transform: capitalize;
   color: #2e2f42;
 }
+
 .personal-list {
   display: flex;
   gap: 24px;
@@ -203,6 +216,10 @@ img {
   background-color: #ffffff;
   width: calc((100% - 72px) / 4);
   border-radius: 0px 0px 4px 4px;
+  overflow: hidden;
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 .img-paddings {
   padding: 32px 0;
@@ -223,6 +240,33 @@ img {
   letter-spacing: 0.02em;
   color: #434455;
 }
+.social-list {
+  display: flex;
+  column-gap: 24px;
+}
+.social-list-link {
+  display: flex;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #4d5ae5;
+  line-height: 0;
+}
+.social-list-link:hover,
+.social-list-link:focus {
+  background-color: #31d0aa;
+}
+.social-list-link .social-list-link-ocen:hover,
+.social-list-link .social-list-link-ocen:focus {
+  background-color: #404bbf;
+}
+
+.social-list-icon {
+  fill: none;
+  stroke: #f4f4fd;
+}
+
 /*section 4*/
 .card-section {
   padding-top: 120px;
@@ -236,6 +280,11 @@ img {
 }
 .second-list {
   width: calc((100% - 48px) / 3);
+}
+.app-list .second-list:hover {
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 .app-paddings {
   padding: 32px 16px;
